@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+          background-color: lightgray;
+      }
+      .box {
+          width: 400px;
+          height: 500px;
+          background:white;
+          margin: 100px auto;
+      }
+      .QR_code {
+          width: 100px;
+          height: 65px;
+          text-align: right;
+          float: right;
+          cursor: pointer;
+      }
+      .no_password {
+          width: 120px;
+          height: 50px;
+          display: inline-block;
+          text-align: center;
+      }
+      .no_password-b{
+          background-color: white;
+          height: 50px;
+          width: 80px;
+          font-size: 15px;
+          border: 0px;
+          cursor: pointer;
+      }
+      .no_password-b:focus{
+          font-weight:900
+      }
+      .password {
+          width: 120px;
+          height: 20px;
+          padding: 22px 5px;
+          display: inline-block;
+          text-align: center;
+      }
+      .password-b{
+          background-color: white;
+          height: 50px;
+          width: 80px;
+          font-size:15px;
+          border: 0px;
+          cursor: pointer;
+      }
+      .password-b:focus{
+          font-weight:900
+          
+      }
+      .phone_email{
+          margin: 5px 20px;
+          height: 50px;
+          border-bottom: solid 1px;
+          border-bottom-color: rgb(233, 225, 225);
+          height: 50px;
+          padding: 5px;
+      }
+      input{
+          outline-style: none ;
+          padding: 18px 0px;
+          border: 0;
+          font-size: 15px;
+      }
+      .Password{
+          margin: 5px 20px;
+          height: 50px;
+          border-bottom: solid 1px;
+          border-bottom-color: rgb(233, 225, 225);
+          padding: 5px;
+      }
+      .eye{
+          display: inline-block;
+          float: right;
+          padding: 12px 0;
+          cursor: pointer;
+      }
+      .foreign{
+          color: royalblue;
+          display: inline-block;
+          margin: 0 20px;
+          padding: 5px;
+          font-size: 15px;
+          cursor: pointer;
+      }
+      .foreign-b{
+          border: 0;
+          outline-style: none;
+          cursor: pointer;
+          font-size: 15px;
+          background-color: white;
+          color: royalblue;
+      }
+      .forget{
+          display: inline-block;
+          float:right;
+          padding: 5px 20px;
+          font-size: 15px;
+      }
+      .submit{
+          width: 350px;
+          height: 40px;
+          margin: 10px 25px;
+          margin-top: 30px;
+          margin-bottom: 20px;
+          background-color: rgb(25, 96, 228);
+          color:white;
+          font-size: 15px;
+          border: none;
+          cursor: pointer;
+      }
+      .privacy{
+          color:lightslategrey;
+          margin: 10px 20px;
+          padding-right: 10px;
+          padding-left: 10px;
+          padding-bottom: 10px;
+          font-size: 13px;
+          border-bottom: solid 1px;
+          border-bottom-color:rgb(233, 225, 225);
+      }
+      .else{
+          color:lightslategrey;
+          display: inline-block;
+          padding: 20px;
+          margin-right: 40px;
+          font-size: 15px;
+      }
+      .wechat_img{
+          display: inline-block;
+      }
+      .wx{
+          display: inline-block;
+          font-size: 15px;
+          color: lightslategrey;
+          margin-right: 20px;
+      }
+      .QQ_img{
+          display: inline-block;
+      }
+      .QQ{
+          display: inline-block;
+          font-size: 15px;
+          margin-right: 20px;
+      }
+      .weibo_img{
+          display: inline-block;
+      }
+      .wb{
+          color: lightslategrey;
+          display: inline-block;
+      }
+      a{
+          text-decoration: none;
+          color: lightslategrey;
+      }
+      .open_img{
+          display: inline-block;
+          margin-left: 20px;
+          padding: 20px 0;
+      }
+      .open{
+          display: inline-block;
+          padding-right: 60px;
+          margin-right: 40px;
+          border-right: solid 1px lightslategrey;
+      }
+      .appimg{
+          display: inline-block;
+          padding: 20px 0;
+      }
+      .app{
+          color: royalblue;
+          display: inline-block;
+      }
+      .color{
+          background-color:whitesmoke
+      }
+      .blue{
+          color: royalblue;
+      }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div>
+            <div class="no_password"><button class="no_password-b">免密码登录</button></div>
+            <div class="password"><button class="password-b">密码登录</button></div>
+            <div class="QR_code"><img src="images/QR_code.svg" width="70"></div>
+        </div>
+    
+        <div class="phone_email">
+            <input type="text" placeholder="手机号或邮箱" style="width: 98%;">
+        </div>
+        
+        <div class="Password">
+            <input type="password" placeholder="密码" style="width: 80%;">
+            <div class="eye"><img src="images/eye.svg" width="22"></div>
+        </div>
+
+        <div class="foreign"><button class="foreign-b">海外手机号登录</button></div>
+        <div class="forget"><a href="https://www.zhihu.com/account/password_reset" target="_blank">忘记密码？</a></div>
+    
+        <div><button type="submit" class="submit">登录</button></div>
+    
+        <div class="privacy">
+            <p>未注册手机验证后自动登录，注册即代表同意《知乎协议》《隐私保护指引》</p>
+        </div>
+
+        <div class="else">社交帐号登录</div>
+        <div class="wechat_img">
+            <a href="https://open.weixin.qq.com/connect/qrconnect?appid=wx268fcfe924dcb171&redirect_uri=https%3A%2F%2Fwww.zhihu.com%2Foauth%2Fcallback%2Fwechat%3Faction%3Dlogin%26from%3D&response_type=code&scope=snsapi_login&state=32366c49475545464d4b44724f4b574d30567063444a5a595168566b4f4c4a32#wechat" target="_blank"><img src="images/wechat.svg" width="22"></a>
+        </div>
+        <div class="wx">
+            <a href="https://open.weixin.qq.com/connect/qrconnect?appid=wx268fcfe924dcb171&redirect_uri=https%3A%2F%2Fwww.zhihu.com%2Foauth%2Fcallback%2Fwechat%3Faction%3Dlogin%26from%3D&response_type=code&scope=snsapi_login&state=32366c49475545464d4b44724f4b574d30567063444a5a595168566b4f4c4a32#wechat" target="_blank">微信</a>
+        </div>
+        
+        <div class="QQ_img">
+            <a href="https://graph.qq.com/oauth2.0/show?which=Login&display=pc&scope=get_user_info%2Cget_info%2Cadd_t%2Cadd_pic_t%2Cget_other_info%2Cget_fanslist%2Cget_idollist%2Cadd_idol%2Cadd_share&state=32366c49475545464d4b44724f4b574d30567063444a5a595168566b4f4c4a32&redirect_uri=https%3A%2F%2Fwww.zhihu.com%2Foauth%2Fcallback%2Fqqconn%3Faction%3Dlogin%26from%3D&response_type=code&client_id=100490701" target="_blank"><img src="images/qq.svg" width="20"></a>
+        </div>
+        
+        <div class="QQ">
+            <a href="https://graph.qq.com/oauth2.0/show?which=Login&display=pc&scope=get_user_info%2Cget_info%2Cadd_t%2Cadd_pic_t%2Cget_other_info%2Cget_fanslist%2Cget_idollist%2Cadd_idol%2Cadd_share&state=32366c49475545464d4b44724f4b574d30567063444a5a595168566b4f4c4a32&redirect_uri=https%3A%2F%2Fwww.zhihu.com%2Foauth%2Fcallback%2Fqqconn%3Faction%3Dlogin%26from%3D&response_type=code&client_id=100490701" target="_blank">QQ</a>
+        </div>
+        
+        <div class="weibo_img">
+            <a href="https://api.weibo.com/oauth2/authorize?scope=email&state=32366c49475545464d4b44724f4b574d30567063444a5a595168566b4f4c4a32&redirect_uri=http%3A%2F%2Fwww.zhihu.com%2Foauth%2Fcallback%2Fsina&response_type=code&client_id=3063806388###" target="_blank"><img src="images/weibo.svg" width="22"></a>
+        </div>
+        <div class="wb">
+            <a href="https://api.weibo.com/oauth2/authorize?scope=email&state=32366c49475545464d4b44724f4b574d30567063444a5a595168566b4f4c4a32&redirect_uri=http%3A%2F%2Fwww.zhihu.com%2Foauth%2Fcallback%2Fsina&response_type=code&client_id=3063806388###" target="_blank">微博</a>
+        </div>
+        
+        <div class="color">
+            <div class="open_img"><a  class="blue" href="https://www.zhihu.com/org/signup" target="_blank"><img src="images/open.svg" width="25"></a></div>
+            <div class="open"><a  class="blue" href="https://www.zhihu.com/org/signup" target="_blank">开通机构号</a></div>
+            
+            <div class="appimg"><a  class="blue" href="#"><img src="images/zhihu.svg" width="25"></a></div>
+            <div class="app"><a  class="blue" href="#">下载知乎App</a></div>
+        </div>
+    </div>
+</body>
+</html>
