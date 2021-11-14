@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var arr=[{name:'xiaoming',age:18},
+                 {name:'zhangsan',age:34},
+                 {name:'lisi',age:29},
+                 {name:'wangwu',age:24}];
+
+        function sortby(key){
+            return function(a,b){
+                var value1=a[key]
+                var value2=b[key]
+                if(value1>value2){
+                    return 1
+                }
+                if(value1<value2){
+                    return -1
+                }
+            }
+        }
+            
+
+        console.log(arr.sort(sortby('age')))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
